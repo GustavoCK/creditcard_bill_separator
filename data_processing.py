@@ -1,5 +1,4 @@
 from pdf_reader import list_of_lists
-from random import randint
 
 
 def safe_input():
@@ -25,5 +24,5 @@ buyers = ('Mary', 'Joel', 'Carlos')
 for i in list_of_lists:
     print(i)
 
-    number = randint(0, 2)
+    number = safe_input()
     class_list.append(Bill(i[1], i[2], buyers[number], i[0]))

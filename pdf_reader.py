@@ -1,9 +1,9 @@
 from PyPDF2 import PdfReader
+from os import getcwd
 
 
 def filter_pdf_text(page_text):
     words_list = (page_text.replace(',', '.').splitlines())
-    print(words_list)
     final_list = []
     temp_list = []
     index = 0

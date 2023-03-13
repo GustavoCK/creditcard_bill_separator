@@ -1,6 +1,6 @@
 from fpdf import FPDF
 from data_processing import class_list, buyers
-
+from os import getcwd,path,mkdir
 
 def draw_line():
     pdf.set_line_width(1)
@@ -40,4 +40,7 @@ for name in buyers:
     pdf.cell(w=25, txt=str(sum_total_price(name)).replace('.', ','), fill=color,
              new_x='LMARGIN', new_y="NEXT", align='R')
 
-    pdf.output('PDF_files/' + name + '_fatura.pdf')
+    directory = getcwd() + '/PDF_files'
+    if not path.exists(directory):
+        mkdir(directory)
+    pdf.output(getcwd() + '/PDF_files/' + name + '_fatura.pdf')

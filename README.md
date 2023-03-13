@@ -10,4 +10,11 @@ The program works by reading my credit card bill in PDF format, extracting the p
 ![](./github/github_gif.gif)
 
 
->Disclaimers
+## Disclaimers
+
+The made some changes to the code for privacy and made a fake bill for the some reason.
+The program only woks with the PDF that is in the github repository.
+
+## How it works
+>1. First Step
+Execute the executable in a folder with the “Creditcard-Bill.pdf”.

@@ -1,5 +1,4 @@
 from PyPDF2 import PdfReader
-from os import getcwd
 
 
 def filter_pdf_text(page_text):
@@ -18,9 +17,6 @@ def filter_pdf_text(page_text):
             temp_list.append(words_list[index])
             index += 1
         final_list.append(temp_list.copy())
-
-    final_list.pop(0)
-    final_list.pop(len(final_list)-1)
 
     return final_list
 

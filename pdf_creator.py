@@ -1,6 +1,7 @@
 from fpdf import FPDF
 from data_processing import class_list, buyers
-from os import getcwd,path,mkdir
+from os import getcwd, path, mkdir
+
 
 def draw_line():
     pdf.set_line_width(1)

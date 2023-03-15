@@ -34,4 +34,7 @@ The program only woks with the PDF that is in the github repository.
 >![](./github/step04.gif)
 
 
-## 
+## Technology Stack
+* Python
+* PyFPDF
+* PyPDF2
